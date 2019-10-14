@@ -1,0 +1,196 @@
+// 闪烁
+.bling {
+    animation-name: bling;
+    animation-duration: .8s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes bling {
+    from {
+        opacity: 1;
+    }
+    to {
+        opacity: 0.4;
+    }
+}
+
+// 徘徊-左右
+.wanderHoz {
+    animation-name: wanderHoz;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+@keyframes wanderHoz {
+    from {
+        transform: translate(-100%, 0);
+    }
+    to {
+        transform: translate(125%, 0);
+    }
+}
+
+// 徘徊-上下
+.wanderVer {
+    animation-name: wanderVer;
+    animation-duration: 1s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: ease-out;
+}
+
+@keyframes wanderVer {
+    from {
+        transform: translate(0, -100%);
+    }
+    to {
+        transform: translate(0, 0);
+    }
+}
+
+// 若隐若现-左
+.fadingLeft {
+    animation-name: fadingLeft;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes fadingLeft {
+    0% {
+        transform: translate(-110%, 0);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(-150%, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(-190%, 0);
+        opacity: 0;
+    }
+}
+
+// 若隐若现-右
+.fadingRight {
+    animation-name: fadingRight;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes fadingRight {
+    0% {
+        transform: translate(10%, 0);
+        opacity: 0;
+    }
+    50% {
+        transform: translate(50%, 0);
+        opacity: 1;
+    }
+    100% {
+        transform: translate(90%, 0);
+        opacity: 0;
+    }
+}
+
+// 浮现
+.fadeZoomIn {
+    animation-name: fadeZoomIn;
+    animation-duration: 2.5s;
+    animation-timing-function: linear;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeZoomIn {
+    0% {
+        transform: scale(0.3, 0.3);
+        opacity: 0;
+    }
+    80% {
+        transform: scale(1.1, 1.1);
+        opacity: 1;
+    }
+    100% {
+        transform: scale(1, 1);
+        opacity: 1;
+    }
+}
+
+// 下落
+.fadeFall {
+    animation-name: fadeFall;
+    animation-duration: 10s;
+    animation-timing-function: linear;
+}
+
+@keyframes fadeFall {
+    from {
+        opacity: 1;
+        transform: translate(0, 0);
+    }
+    to {
+        opacity: 0;
+        transform: translate(0, 100vh);
+    }
+}
+
+// 摇晃
+.swing {
+    animation-name: swing;
+    animation-duration: 20s;
+    animation-iteration-count: infinite;
+    animation-direction: alternate;
+    animation-timing-function: linear;
+}
+
+@keyframes swing {
+    from {
+        transform: translate3d(0, 0, 0);
+    }
+  
+    15% {
+        transform: translate3d(-125%, 0, 0) rotate3d(0, 0, 1, 25deg);
+    }
+  
+    30% {
+        transform: translate3d(120%, 0, 0) rotate3d(0, 0, 1, -23deg);
+    }
+  
+    45% {
+        transform: translate3d(-115%, 0, 0) rotate3d(0, 0, 1, 23deg);
+    }
+  
+    60% {
+        transform: translate3d(110%, 0, 0) rotate3d(0, 0, 1, -22deg);
+    }
+  
+    75% {
+        transform: translate3d(-15%, 0, 0) rotate3d(0, 0, 1, 21deg);
+    }
+  
+    to {
+        transform: translate3d(0, 0, 0);
+    }
+}
+
+// 旋转
+.rotate {
+    animation-name: rotate;
+    animation-duration: 2s;
+    animation-iteration-count: infinite;
+    animation-timing-function: linear;
+}
+
+@keyframes rotate {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}

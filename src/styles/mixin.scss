@@ -1,0 +1,89 @@
+// 全屏
+@mixin fullscreen {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
+
+// 铺满
+@mixin fullfill {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+// 背景图片
+@mixin bg-cover {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+// 背景图片
+@mixin bg-contain {
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: contain;
+}
+
+// 盒子模型
+@mixin box {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    display: -webkit-box;
+    -webkit-box-align: center;
+    -webkit-box-pack: center;
+}
+
+// 居中
+@mixin transform-center {
+    transform: translate3d(-50%, -50%, 0);
+    top: 50%;
+    left: 50%;
+    position: absolute;
+}
+
+// 横向居中
+@mixin transform-center-x {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+// 纵向居中
+@mixin transform-center-y {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+// 黑框提示
+@mixin toast {
+    max-width: 80vw;
+    background: rgba(0, 0, 0, 0.8);
+    padding: .06rem .1rem;
+    border-radius: .04rem;
+    color: #fff;
+    text-align: center;
+}
+
+// 文字溢出
+@mixin text-overflow {
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+}
+
+// 清除浮动
+@mixin clear {
+    &:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+}

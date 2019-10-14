@@ -1,0 +1,51 @@
+{
+  "name": "one-take",
+  "version": "1.0.0",
+  "description": "一镜到底demo",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "webpack-dev-server --inline --progress --config webpack.dev.config.js",
+    "build": "node ./bin/build"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/huguobo/One-Take.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/huguobo/One-Take/issues"
+  },
+  "homepage": "https://github.com/huguobo/One-Take#readme",
+  "dependencies": {
+    "alloytouch": "^0.3.0",
+    "copy-webpack-plugin": "^5.0.4",
+    "gsap": "^2.1.3",
+    "http-server": "^0.11.1",
+    "pixi.js": "^4.8.8"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.6.2",
+    "@babel/preset-env": "^7.6.2",
+    "@babel/preset-react": "^7.0.0",
+    "babel-loader": "^8.0.6",
+    "babel-plugin-transform-class-properties": "^6.24.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
+    "chalk": "^2.4.2",
+    "clean-webpack-plugin": "^3.0.0",
+    "css-loader": "^3.2.0",
+    "extract-text-webpack-plugin": "^3.0.2",
+    "html-webpack-plugin": "^3.2.0",
+    "mini-css-extract-plugin": "^0.8.0",
+    "node-sass": "^4.12.0",
+    "ora": "^4.0.2",
+    "sass-loader": "^8.0.0",
+    "url-loader": "^2.1.0",
+    "webpack": "^4.41.1",
+    "webpack-cli": "^3.3.9",
+    "webpack-dev-server": "^3.8.1",
+    "webpack-manifest-plugin": "^2.1.2",
+    "webpack-merge": "^4.2.2"
+  }
+}

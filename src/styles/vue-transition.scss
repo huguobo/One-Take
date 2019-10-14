@@ -1,0 +1,19 @@
+// 淡入淡出
+.fade-enter-active,
+.fade-leave-active {
+    transition: opacity .5s;
+}
+.fade-enter,
+.fade-leave-to {
+    opacity: 0;
+}
+
+// 列表淡入淡出
+.fade-list-enter,
+.fade-list-leave-to {
+    opacity: 0;
+    transform: translateY(-100%);
+}
+.fade-list-leave-active {
+    position: absolute;
+}
